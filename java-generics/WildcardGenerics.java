@@ -10,6 +10,12 @@ public class WildcardGenerics {
         System.out.println();
     }
 
+    // Bounded wildcard. We use `List<? extends Item>`.
+    private void printListBounded(List<? extends Item> lst) {
+        lst.forEach(item -> System.out.print(item + " "));
+        System.out.println();
+    }
+
     public static void main(String[] args) {
 
         WildcardGenerics obj = new WildcardGenerics();
@@ -23,6 +29,11 @@ public class WildcardGenerics {
         List<Item> itemList = new ArrayList<>();
         itemList.addAll(Arrays.asList(new Item(10), new Item(20)));
         obj.printList(itemList);
+
+        // Bounded Print object list.
+        List<Item> itemListBounded = new ArrayList<>();
+        itemListBounded.addAll(Arrays.asList(new Item(10), new Item(20)));
+        obj.printListBounded(itemListBounded);
         
     }
     
