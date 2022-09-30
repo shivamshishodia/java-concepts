@@ -1,2 +1,2 @@
-# java-concepts
+# Java Concepts
 Consolidated list of Java concepts.
