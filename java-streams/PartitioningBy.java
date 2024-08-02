@@ -5,6 +5,7 @@ public class PartitioningBy {
 
     public static void main(String[] args) {
 
+        // partitioningBy is used to divide the data into two partitions. It accepts a Predicate.
         List<String> fruits = List.of("apple", "orange", "banana", "pear");
 
         // Partition fruits by length.
@@ -19,15 +20,15 @@ public class PartitioningBy {
                 .collect(Collectors.partitioningBy(fruit -> fruit.length() > 4, Collectors.counting()));
 
         // partitionedFruitsByLengthAndCount : {false=1, true=3}
-        System.out.println("partitionedFruitsByLengthAndCount : " + partitionedFruitsByLengthAndCount); 
-        
+        System.out.println("partitionedFruitsByLengthAndCount : " + partitionedFruitsByLengthAndCount);
+
         // Partition fruits by length and change to upper case.
         Map<Boolean, List<String>> partitionedFruitsInUpperCaseByLength = fruits.stream()
                 .collect(Collectors.partitioningBy(fruit -> fruit.length() > 4,
                         Collectors.mapping(String::toUpperCase, Collectors.toList())));
 
         // partitionedFruitsInUpperCaseByLength : {false=[PEAR], true=[APPLE, ORANGE, BANANA]}
-        System.out.println("partitionedFruitsInUpperCaseByLength : " + partitionedFruitsInUpperCaseByLength); 
+        System.out.println("partitionedFruitsInUpperCaseByLength : " + partitionedFruitsInUpperCaseByLength);
 
         // Partition fruits by length and starts with check.
         Map<Boolean, List<String>> partitionedFruitsByLengthAndStartsWith = fruits.stream()

@@ -26,6 +26,7 @@ public class GroupingBy {
 
     public static void main(String[] args) {
 
+        // groupingBy is used to create groups based on a criterion. It accepts a Function.
         List<Student> students = Arrays.asList(
             new Student("Math", "John", "Smith", "Miami", 19),
             new Student("Programming", "Mike", "Miles", "New York", 21),
@@ -60,7 +61,7 @@ public class GroupingBy {
                     Collectors.mapping(item -> item.name, Collectors.toList())));
 
         // namesByCity : {Miami=[John, James, Kyle], New York=[Mike, Michael]}
-        System.out.println("namesByCity : " + namesByCity);        
+        System.out.println("namesByCity : " + namesByCity);
 
     }
 
