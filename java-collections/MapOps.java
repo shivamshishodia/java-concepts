@@ -8,9 +8,9 @@ public class MapOps {
      * HashMap operations:
      * - put(key, value): adds a new pair or overrides the value for an existing key.
      * - putIfAbsent(key, value): adds a pair only when the key does not already exist.
+     * - replace(key, value): updates a value only if the key already exists.
      * - get(key): returns the value for a key.
      * - getOrDefault(key, defaultValue): returns a fallback value if the key is absent.
-     * - replace(key, value): updates a value only if the key already exists.
      * - containsKey(key) / containsValue(value): checks whether data exists.
      * - remove(key): removes a key-value pair.
      * - clear(): removes every entry.
