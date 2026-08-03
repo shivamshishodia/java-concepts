@@ -57,6 +57,15 @@ public class StackAndQueueOps {
     }
 
     public static void demonstrateDequeOperations() {
+        // Using general queue specific methods (offer, poll, and peek)
+        Deque<String> cars = new ArrayDeque<>();
+        cars.offer("Innova");
+        cars.offer("Suzuki");
+        System.out.println("Front element: " + cars.peek());
+        System.out.println("Remove front element: " + cars.poll());
+        System.out.println("Front" + cars.peek());
+
+        // Using specific operation methods
         Deque<String> names = new ArrayDeque<>();
         names.offerLast("Shivam");
         names.offerLast("Sneha");
