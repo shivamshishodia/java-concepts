@@ -33,6 +33,11 @@ public class MapOps {
         names.put("Tikam", "Singh");
         names.put("Ansh", null);
 
+        // Native loop
+        for(Map.Entry<String, String> ele : names.entrySet()) {
+            System.out.println(ele.getKey() + " -> " + ele.getValue());
+        }
+
         // put overrides when the same key already exists.
         names.put("Shivam", "Shishodia");
 
