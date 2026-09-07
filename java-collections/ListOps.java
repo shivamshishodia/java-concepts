@@ -7,12 +7,12 @@ public class ListOps {
      * List operations:
      * - add(value) / add(index, value): adds a value at the end or at a specific position.
      * - addAll(collection): adds all values from another collection.
-     * - get(index): returns the value at an index.
-     * - set(index, value): replaces the value at an index.
-     * - contains(value) / containsAll(collection): checks whether values exist.
-     * - indexOf(value) / lastIndexOf(value): finds the first or last matching index.
      * - remove(value) / remove(index): removes a value or the value at an index.
      * - removeIf(predicate): removes values that match a condition.
+     * - get(index): returns the value at an index.
+     * - set(index, value): replaces the value at an index.
+     * - indexOf(value) / lastIndexOf(value): finds the first or last matching index.
+     * - contains(value) / containsAll(collection): checks whether values exist.
      * - sort(comparator): sorts the values.
      * - size() / isEmpty(): returns the number of values or checks whether the List is empty.
      * - clear(): removes every value.

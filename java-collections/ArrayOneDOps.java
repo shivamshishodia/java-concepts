@@ -11,8 +11,8 @@ public class ArrayOneDOps {
      * - Arrays.toString(array) prints contents.
      * - Arrays.sort(array) sorts the original array.
      * - Arrays.binarySearch(array, value) searches a sorted array.
-     * - Arrays.copyOf(...) and copyOfRange(...) create copies.
      * - Arrays.fill(array, value) assigns one value to every element.
+     * - Arrays.copyOf(...) and copyOfRange(...) create copies.
      * - Arrays.mismatch(first, second) returns the first different index.
      * - Arrays.setAll(array, generator) calculates each element from its index.
      *
@@ -26,7 +26,7 @@ public class ArrayOneDOps {
     }
 
     public static void demonstrateComparatorSorting() {
-        String[] names = { "Shivam", "Sneha", "Sunita", "Tikam", "Ansh" };
+        String[] names = { "Shivam", "Sneha", "Sunita", "Tikam", "Ansh" }; // OR `new String[]{"Shivam", "Sneha"}`
 
         // Comparator utility: alphabetical order, ignoring letter case.
         Arrays.sort(names, String.CASE_INSENSITIVE_ORDER);

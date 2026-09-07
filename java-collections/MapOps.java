@@ -8,11 +8,13 @@ public class MapOps {
      * HashMap operations:
      * - put(key, value): adds a new pair or overrides the value for an existing key.
      * - putIfAbsent(key, value): adds a pair only when the key does not already exist.
+     * - compute(key, remappingFunction): computes a new value for a key, adding it if absent or replacing its existing value.
+     * - computeIfAbsent(key, mappingFunction): computes and adds a value only if the key does not already exist.
+     * - remove(key): removes a key-value pair.
      * - replace(key, value): updates a value only if the key already exists.
      * - get(key): returns the value for a key.
      * - getOrDefault(key, defaultValue): returns a fallback value if the key is absent.
      * - containsKey(key) / containsValue(value): checks whether data exists.
-     * - remove(key): removes a key-value pair.
      * - clear(): removes every entry.
      *
      * HashMap uses a key's hashCode() and equals() for efficient lookups.
