@@ -23,6 +23,11 @@ public class TreeMapOps {
      * - Does not normally allow null keys.
      * - Allows null values.
      * - Most operations take O(log n).
+     *
+     * Comparisons:
+     * - HashMap: fast lookup, no key order.
+     * - LinkedHashMap: insertion-order keys.
+     * - TreeMap: sorted keys.
      */
 
     public static void main(String[] args) {
