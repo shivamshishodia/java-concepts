@@ -15,6 +15,9 @@ public class MapOps {
      * - get(key): returns the value for a key.
      * - getOrDefault(key, defaultValue): returns a fallback value if the key is absent.
      * - containsKey(key) / containsValue(value): checks whether data exists.
+     * - keySet(): returns a view containing all keys in the map.
+     * - values(): returns a view containing all values in the map.
+     * - entrySet(): returns a view containing all key-value pairs in the map.
      * - clear(): removes every entry.
      *
      * HashMap uses a key's hashCode() and equals() for efficient lookups.
